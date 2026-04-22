@@ -63,3 +63,33 @@ footer {
 .imagens-sequencia img:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px auto;
+        max-width: 90%;
+    }
+
+    .imagens-sequencia {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .imagens-sequencia img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .servico {
+        padding: 12px;
+    }
+}
