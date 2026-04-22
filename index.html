@@ -1,53 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços de Juliano Ramos Mendes - Manutenção e Conserto</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliano | Desenvolvedor</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #020617;
+      align-items: center;
+    }
+
+    header h3 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: opacity 0.3s;
+    }
+
+    header a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: #020617;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+      font-size: 1.8rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #334155;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #94a3b8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      header a {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero {
+        padding: 50px 20px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bem-vindo aos Serviços de Juliano Ramos Mendes</h1>
-        <div class="imagens-sequencia">
-            <img src="img/IMG_20230308_090409888.jpg" alt="Serviço 1">
-            <img src="img/IMG_20230308_090800380.jpg" alt="Serviço 2">
-            <img src="img/IMG_20230308_091049871.jpg" alt="Serviço 3">
-            <img src="img/IMG_20230308_091509270.jpg" alt="Serviço 4">
-        </div>
-        <p>Especializado em manutenção de video games, conserto de notebooks e PCs</p>
-    </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um profissional experiente em manutenção e reparo de equipamentos eletrônicos. Ofereço serviços de alta qualidade para garantir que seus dispositivos funcionem perfeitamente.</p>
-    </section>
+<header>
+  <h3>Juliano</h3>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-    <section id="servicos">
-        <h2>Serviços Oferecidos</h2>
-        <div class="servico">
-            <h3>Manutenção de Video Games</h3>
-            <p>Limpeza, reparo e otimização de consoles de video game. Mantenha seus jogos funcionando sem interrupções.</p>
-        </div>
-        <div class="servico">
-            <h3>Conserto de Notebooks</h3>
-            <p>Reparo de telas quebradas, substituição de baterias, limpeza interna e solução de problemas de software.</p>
-        </div>
-        <div class="servico">
-            <h3>Conserto de PCs</h3>
-            <p>Montagem, upgrade de componentes, reparo de hardware e remoção de vírus e malware.</p>
-        </div>
-    </section>
+<section class="hero">
+  <h1>Olá, eu sou Juliano 👋</h1>
+  <p>Desenvolvedor iniciante focado em HTML, CSS e JavaScript</p>
+  <a class="btn" href="#projetos">Ver projetos</a>
+</section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato para agendar um serviço ou tirar dúvidas.</p>
-        <p>Email: <a href="mailto:729julian40@gmail.com">729julian40@gmail.com</a></p>
-        <p>Telefone: <a href="tel:17999784438">(17) 99978-4438</a></p>
-    </section>
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <p>
+    Estou aprendendo desenvolvimento web e criando projetos para evoluir minhas habilidades.
+    Busco oportunidades para crescer na área e construir soluções reais.
+  </p>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Serviços de Juliano Ramos Mendes. Todos os direitos reservados.</p>
-    </footer>
+<section id="projetos">
+  <h2>Projetos</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Projeto 1</h3>
+      <p>Descrição do projeto aqui.</p>
+    </div>
+
+    <div class="card">
+      <h3>Projeto 2</h3>
+      <p>Descrição do projeto aqui.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Email: 729julian40@gmail.com</p>
+  <p>Telefone: (17) 99978-4438</p>
+</section>
+
+<footer>
+  <p>© 2026 Juliano</p>
+</footer>
+
 </body>
 </html>
