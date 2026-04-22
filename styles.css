@@ -41,3 +41,25 @@ footer {
     background-color: #007bff;
     color: white;
 }
+
+.imagens-sequencia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.imagens-sequencia img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imagens-sequencia img:hover {
+    transform: scale(1.05);
+}
