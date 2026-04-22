@@ -216,5 +216,33 @@
   <p>© 2026 Juliano</p>
 </footer>
 
+<script>
+  // Função para embaralhar array
+  function embaralhar(array) {
+    let novoArray = [...array];
+    for (let i = novoArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [novoArray[i], novoArray[j]] = [novoArray[j], novoArray[i]];
+    }
+    return novoArray;
+  }
+
+  // Rotacionar imagens a cada 5 segundos
+  function rotacionarImagens() {
+    const galeria = document.querySelector('.galeria');
+    let imagens = Array.from(galeria.querySelectorAll('img'));
+    
+    setInterval(() => {
+      imagens = embaralhar(imagens);
+      imagens.forEach(img => {
+        galeria.appendChild(img);
+      });
+    }, 5000);
+  }
+
+  // Iniciar ao carregar a página
+  document.addEventListener('DOMContentLoaded', rotacionarImagens);
+</script>
+
 </body>
 </html>
